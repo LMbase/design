@@ -32,46 +32,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.visual} aria-hidden="true">
-          <div className={styles.cardStack}>
-            <div className={styles.codeCard}>
-              <div className={styles.codeHeader}>
-                <div className={styles.dot} style={{ background: '#ff5f57' }} />
-                <div className={styles.dot} style={{ background: '#febc2e' }} />
-                <div className={styles.dot} style={{ background: '#28c840' }} />
-                <span className={styles.codeTitle}>exchange.ts</span>
-              </div>
-              <pre className={styles.codeBlock}>
-                <code>{`import { Exchange } from 'lmbase'
-
-// Your idle GPT-4o credits → swap
-const order = await Exchange.order({
-  give: { provider: 'openai', tokens: 50_000 },
-  get:  { provider: 'anthropic', model: 'sonnet' }
-})
-
-// → Matched in < 2 min
-// → Local proxy: localhost:8080
-// → trade.execute()`}</code>
-              </pre>
-            </div>
-
-            <div className={styles.floatCard}>
-              <div className={styles.metric}>
-                <span className={styles.metricValue}>4</span>
-                <span className={styles.metricLabel}>Providers</span>
-              </div>
-              <div className={styles.metric}>
-                <span className={styles.metricValue} style={{ color: 'var(--color-accent)' }}>$0</span>
-                <span className={styles.metricLabel}>No fees</span>
-              </div>
-            </div>
-
-            <div className={styles.statusBadge}>
-              <span className={styles.statusDot} />
-              No escrow. P2P settlement.
-            </div>
-          </div>
+        <div className={styles.visual}>
+          <img
+            src="/lmbase-hero.png"
+            alt="LMbase Desktop App — exchange UI"
+            className={styles.heroImage}
+          />
         </div>
       </div>
     </section>
