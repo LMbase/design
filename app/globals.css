@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Surface tokens */
+  --color-background: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-surface-container-low: #f2f4f4;
+  --color-surface-container: #ebeeef;
+  --color-surface-container-high: #e4e9ea;
+  --color-surface-dim: #d4dbdd;
+
+  /* Text tokens */
+  --color-on-background: #2d3435;
+  --color-on-surface: #2d3435;
+  --color-on-surface-variant: #5a6061;
+
+  /* Accent tokens */
+  --color-accent: #006e37;
+  --color-accent-light: #6bfe9c;
+  --color-accent-dim: #005f2f;
+
+  /* Border/outline tokens */
+  --color-outline: #757c7d;
+  --color-outline-variant: #adb3b4;
+
+  /* Error */
+  --color-error: #9f403d;
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  /* Border radius */
+  --radius-sharp: 2px;
+  --radius-md: 6px;
+
+  /* Shadows - subtle tonal only */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.10);
+  --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.section-label {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+.section-heading {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-on-background);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: var(--font-size-3xl);
+  }
+}

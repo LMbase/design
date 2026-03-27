@@ -1,0 +1,228 @@
+.hero {
+  padding: 160px 0 100px;
+  background: var(--color-background);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.headline {
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--color-on-background);
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 12px 24px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  border-radius: var(--radius-sharp);
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-accent-dim);
+  transform: translateY(-1px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  border: 1.5px solid var(--color-outline-variant);
+  border-radius: var(--radius-sharp);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-on-surface);
+  background: var(--color-surface-container-low);
+}
+
+/* Visual side */
+.visual {
+  position: relative;
+}
+
+.cardStack {
+  position: relative;
+  height: 380px;
+}
+
+.codeCard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-hover);
+  overflow: hidden;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-container-low);
+  border-bottom: 1px solid var(--color-surface-container);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.codeTitle {
+  margin-left: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-on-surface-variant);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.codeBlock {
+  padding: var(--space-4);
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--color-on-surface);
+  overflow-x: auto;
+}
+
+.codeBlock code {
+  color: inherit;
+}
+
+.floatCard {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  display: flex;
+  gap: var(--space-6);
+  background: var(--color-surface);
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metricValue {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-on-surface);
+  line-height: 1;
+}
+
+.metricLabel {
+  font-size: var(--font-size-xs);
+  color: var(--color-on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 140px;
+  left: -20px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  background: var(--color-surface);
+  border-radius: 100px;
+  box-shadow: var(--shadow-card);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-on-surface);
+  white-space: nowrap;
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .headline {
+    font-size: var(--font-size-5xl);
+  }
+
+  .cardStack {
+    height: 300px;
+  }
+
+  .codeCard {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .headline {
+    font-size: var(--font-size-4xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .visual {
+    display: none;
+  }
+}
