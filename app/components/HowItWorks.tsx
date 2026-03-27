@@ -3,18 +3,18 @@ import styles from './HowItWorks.module.css'
 const steps = [
   {
     num: '01',
-    title: 'Choose a model',
-    desc: 'Browse thousands of open-source models in the registry. Filter by task, size, provider, or fine-tuning status.',
+    title: 'Set what you offer',
+    desc: 'Choose your provider (OpenAI, Anthropic, Gemini, Copilot), pick the model, and set your token budget. Your API key stays on your machine.',
   },
   {
     num: '02',
-    title: 'Fine-tune or deploy',
-    desc: 'Deploy in one click or use the fine-tuning studio to customize the model with your own dataset and parameters.',
+    title: 'Request what you need',
+    desc: 'Select the model you want to use. LMbase shows you the estimated token return based on current provider pricing.',
   },
   {
     num: '03',
-    title: 'Ship and scale globally',
-    desc: 'Get a production-ready API endpoint. Scale automatically across 20+ regions with built-in caching and redundancy.',
+    title: 'Get matched, start using',
+    desc: 'LMbase pairs you with a compatible peer, spins up a local proxy, and gives you a copy-ready endpoint. Your session is live.',
   },
 ]
 

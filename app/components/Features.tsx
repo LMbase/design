@@ -4,25 +4,23 @@ const features = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="7" height="7" rx="1"/>
-        <rect x="14" y="3" width="7" height="7" rx="1"/>
-        <rect x="3" y="14" width="7" height="7" rx="1"/>
-        <rect x="14" y="14" width="7" height="7" rx="1"/>
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
       </svg>
     ),
-    title: 'Model Registry',
-    description: 'Discover and deploy thousands of open-source models. From frontier LLMs to specialized fine-tuned variants — all accessible via a single, unified API.',
+    title: 'Peer-to-Peer Matching',
+    description: 'LMbase pairs you with someone offering the model you need. No central server holds your credits — just a lightweight pairing service.',
   },
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
-        <path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/>
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+        <path d="M7 11V7a5 5 0 0110 0v4"/>
       </svg>
     ),
-    title: 'Fine-tuning Studio',
-    description: 'Customize any model with your own data. Upload datasets, configure training parameters, and ship improved models — all without managing infrastructure.',
+    title: 'Keys Stay Local',
+    description: 'Your API credentials never leave your machine. LMbase creates a local proxy — your secrets are yours. The exchange happens at the network level.',
   },
   {
     icon: (
@@ -31,8 +29,8 @@ const features = [
         <polyline points="8 6 2 12 8 18"/>
       </svg>
     ),
-    title: 'API-First Infrastructure',
-    description: 'One unified API to rule them all. Switch between providers, regions, and models without touching your code. Built for production from day one.',
+    title: 'Copy-Ready Endpoint',
+    description: 'Once matched, get an instant OpenAI-compatible endpoint you can paste into any client. Use Claude through GPT code. Works with your existing tools.',
   },
 ]
 
@@ -41,9 +39,9 @@ export default function Features() {
     <section className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <span className="section-label">What we offer</span>
+          <span className="section-label">Why lmbase</span>
           <h2 className={`section-heading ${styles.heading}`}>
-            Everything you need to<br />ship AI at scale
+            Built different,<br />on every dimension
           </h2>
         </div>
         <div className={styles.grid}>

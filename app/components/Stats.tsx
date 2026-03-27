@@ -1,10 +1,10 @@
 import styles from './Stats.module.css'
 
 const stats = [
-  { value: '10,000+', label: 'Models available' },
-  { value: '99.9%', label: 'Uptime SLA' },
-  { value: '50ms', label: 'Avg. latency' },
-  { value: 'Global', label: 'CDN coverage' },
+  { value: '4', label: 'Providers supported' },
+  { value: '100%', label: 'Key privacy' },
+  { value: 'P2P', label: 'Direct exchange' },
+  { value: 'Open', label: 'Source available' },
 ]
 
 export default function Stats() {
