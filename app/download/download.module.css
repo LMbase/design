@@ -1,0 +1,187 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-background);
+  padding: 80px var(--space-6) var(--space-16);
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto var(--space-16);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.heading {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  color: var(--color-on-background);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-top: var(--space-16);
+}
+
+.subheading {
+  font-size: var(--font-size-xl);
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 10px 20px;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-outline-variant);
+  border-radius: var(--radius-sharp);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-on-surface);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.githubLink:hover {
+  border-color: var(--color-on-surface);
+  background: var(--color-surface-container-low);
+}
+
+.platformGrid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.platformCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.platformCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.platformHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.platformIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-container-low);
+  border-radius: var(--radius-sharp);
+  color: var(--color-on-surface-variant);
+  flex-shrink: 0;
+}
+
+.platformName {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-on-surface);
+  margin-bottom: var(--space-1);
+}
+
+.platformBadge {
+  font-size: var(--font-size-xs);
+  color: var(--color-on-surface-variant);
+  background: var(--color-surface-container-low);
+  padding: 2px 8px;
+  border-radius: var(--radius-sharp);
+}
+
+.archList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.archItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-variant);
+}
+
+.archDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 12px 20px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  border-radius: var(--radius-sharp);
+  transition: background 0.15s ease, transform 0.1s ease;
+  text-align: center;
+}
+
+.downloadBtn:hover {
+  background: var(--color-accent-dim);
+  transform: translateY(-1px);
+}
+
+.note {
+  max-width: 900px;
+  margin: var(--space-12) auto 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-variant);
+}
+
+.note a {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 100px var(--space-6) var(--space-12);
+  }
+
+  .heading {
+    font-size: var(--font-size-4xl);
+    margin-top: var(--space-12);
+  }
+
+  .platformGrid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .platformCard {
+    padding: var(--space-6);
+  }
+}
