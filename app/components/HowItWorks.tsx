@@ -3,18 +3,18 @@ import styles from './HowItWorks.module.css'
 const steps = [
   {
     num: '01',
-    title: 'Set what you offer',
-    desc: 'Choose your provider (OpenAI, Anthropic, Gemini, Copilot), pick the model, and set your token budget. Your API key stays on your machine.',
+    title: 'Post your order',
+    desc: 'Choose which tokens to give (e.g. 50K OpenAI) and what you want in return (e.g. Anthropic Sonnet). Set your rate and amount.',
   },
   {
     num: '02',
-    title: 'Request what you need',
-    desc: 'Select the model you want to use. LMbase shows you the estimated token return based on current provider pricing.',
+    title: 'Get matched P2P',
+    desc: 'lmbase finds a counterparty with complementary needs. No central order book — just peer discovery via a lightweight relay.',
   },
   {
     num: '03',
-    title: 'Get matched, start using',
-    desc: 'LMbase pairs you with a compatible peer, spins up a local proxy, and gives you a copy-ready endpoint. Your session is live.',
+    title: 'Swap. Done.',
+    desc: 'Both proxies spin up locally. Tokens flow directly. You get an OpenAI-compatible endpoint pointing at your peer\'s API — instant, no setup.',
   },
 ]
 

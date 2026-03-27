@@ -4,13 +4,11 @@ const features = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-        <circle cx="9" cy="7" r="4"/>
-        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
       </svg>
     ),
-    title: 'Peer-to-Peer Matching',
-    description: 'LMbase pairs you with someone offering the model you need. No central server holds your credits — just a lightweight pairing service.',
+    title: 'Market-Based Rates',
+    description: 'Token swaps priced by current provider rates — OpenAI vs Anthropic vs Gemini. Real-time conversion so you always know what you\'re getting.',
   },
   {
     icon: (
@@ -19,8 +17,8 @@ const features = [
         <path d="M7 11V7a5 5 0 0110 0v4"/>
       </svg>
     ),
-    title: 'Keys Stay Local',
-    description: 'Your API credentials never leave your machine. LMbase creates a local proxy — your secrets are yours. The exchange happens at the network level.',
+    title: 'No Escrow. No Fees.',
+    description: 'Credits move directly between peers via a local proxy. No third party holds your tokens. No trading fees. No account needed.',
   },
   {
     icon: (
@@ -29,8 +27,8 @@ const features = [
         <polyline points="8 6 2 12 8 18"/>
       </svg>
     ),
-    title: 'Copy-Ready Endpoint',
-    description: 'Once matched, get an instant OpenAI-compatible endpoint you can paste into any client. Use Claude through GPT code. Works with your existing tools.',
+    title: 'Works With Your Stack',
+    description: 'Get an OpenAI-compatible endpoint after matching. Paste it into LangChain, your app, any client. Switch providers without touching code.',
   },
 ]
 
@@ -41,7 +39,7 @@ export default function Features() {
         <div className={styles.header}>
           <span className="section-label">Why lmbase</span>
           <h2 className={`section-heading ${styles.heading}`}>
-            Built different,<br />on every dimension
+            An exchange built<br />for inference tokens
           </h2>
         </div>
         <div className={styles.grid}>

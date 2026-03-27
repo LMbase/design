@@ -1,9 +1,9 @@
 import styles from './Stats.module.css'
 
 const stats = [
-  { value: '4', label: 'Providers supported' },
-  { value: '100%', label: 'Key privacy' },
-  { value: 'P2P', label: 'Direct exchange' },
+  { value: '4', label: 'Token pairs' },
+  { value: '$0', label: 'Trading fees' },
+  { value: 'P2P', label: 'Direct settlement' },
   { value: 'Open', label: 'Source available' },
 ]
 

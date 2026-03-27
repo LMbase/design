@@ -4,9 +4,9 @@ export default function CTA() {
   return (
     <section className={styles.section} id="cta">
       <div className={styles.inner}>
-        <h2 className={styles.heading}>Have credits sitting idle?</h2>
+        <h2 className={styles.heading}>Your tokens are idle. Someone wants them.</h2>
         <p className={styles.subtitle}>
-          Trade them for access to models you actually want to use.
+          Match. Swap. Done. No fees, no escrow, no middleman.
         </p>
         <div className={styles.actions}>
           <a

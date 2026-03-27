@@ -5,13 +5,14 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <span className="section-label">Peer-to-Peer LLM Exchange</span>
+          <span className="section-label">LLM Token Exchange</span>
           <h1 className={styles.headline}>
-            Trade API credits<br />with anyone
+            The foundational token<br />interchange layer
           </h1>
           <p className={styles.subtitle}>
-            Share your OpenAI credits, get Anthropic access. Share Gemini, get GitHub Copilot.
-            A decentralized marketplace for LLM API tokens — no middleman, your keys stay on your machine.
+            Inference tokens are real money. lmbase is a P2P exchange — 
+            swap your idle OpenAI credits for Anthropic, Gemini for Copilot.
+            No escrow. No middleman. Your keys, your tokens, your trade.
           </p>
           <div className={styles.buttons}>
             <a href="#cta" className={styles.btnPrimary}>
@@ -38,25 +39,20 @@ export default function Hero() {
                 <div className={styles.dot} style={{ background: '#ff5f57' }} />
                 <div className={styles.dot} style={{ background: '#febc2e' }} />
                 <div className={styles.dot} style={{ background: '#28c840' }} />
-                <span className={styles.codeTitle}>lmbase.ts</span>
+                <span className={styles.codeTitle}>exchange.ts</span>
               </div>
               <pre className={styles.codeBlock}>
                 <code>{`import { Exchange } from 'lmbase'
 
-const session = await Exchange.create({
-  offer: {
-    provider: 'openai',
-    model: 'gpt-4o',
-    tokens: 100000
-  },
-  request: {
-    provider: 'anthropic',
-    model: 'claude-3-5-sonnet'
-  }
+// Your idle GPT-4o credits → swap
+const order = await Exchange.order({
+  give: { provider: 'openai', tokens: 50_000 },
+  get:  { provider: 'anthropic', model: 'sonnet' }
 })
 
-// → Matched! Local proxy running
-// → Use your peer's API instantly`}</code>
+// → Matched in < 2 min
+// → Local proxy: localhost:8080
+// → trade.execute()`}</code>
               </pre>
             </div>
 
@@ -66,14 +62,14 @@ const session = await Exchange.create({
                 <span className={styles.metricLabel}>Providers</span>
               </div>
               <div className={styles.metric}>
-                <span className={styles.metricValue} style={{ color: 'var(--color-accent)' }}>P2P</span>
-                <span className={styles.metricLabel}>Direct exchange</span>
+                <span className={styles.metricValue} style={{ color: 'var(--color-accent)' }}>$0</span>
+                <span className={styles.metricLabel}>No fees</span>
               </div>
             </div>
 
             <div className={styles.statusBadge}>
               <span className={styles.statusDot} />
-              Keys stay on your machine
+              No escrow. P2P settlement.
             </div>
           </div>
         </div>
