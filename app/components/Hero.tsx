@@ -7,7 +7,7 @@ export default function Hero() {
         <div className={styles.copy}>
           <span className="section-label">LLM Token Exchange</span>
           <h1 className={styles.headline}>
-            The foundational token<br />interchange layer
+            The world's first peer-to-peer<br />LLM token exchange
           </h1>
           <p className={styles.subtitle}>
             Inference tokens are real money. lmbase is a P2P exchange — 
